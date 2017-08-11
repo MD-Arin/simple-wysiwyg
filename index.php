@@ -10,7 +10,7 @@
 </head>
 <body onLoad="iFrameOn();">
     <div>
-        <form class="" action="post.php" method="post">
+        <form class="" action="post.php" method="post" name="myForm" id="myForm">
             <div id="wysiwyg_cp" style="padding:8px;">
                 <button type="button" onClick="iBold()"><i class="fa fa-bold"></i></button>
                 <button type="button" onClick="iUnderline()"><i class="fa fa-underline"></i></button>
@@ -27,7 +27,7 @@
                 <button type="button" onClick="iHeading1()"><i class="fa fa-header"></i>1</button>
                 <button type="button" onClick="iHeading2()"><i class="fa fa-header"></i>2</button>
                 <button type="button" onClick="iHeading3()"><i class="fa fa-header"></i>3</button>
-                <button type="button" onClick="iNormalText()"><i class="fa fa-text-width"> Small Text</i></button>
+                <button type="button" onClick="iNormalText()"><i class="fa fa-text-width"> Normal Text</i></button>
             </div>
             <textarea style="display: none;" name="mytextarea" id="mytextarea" rows="8" cols="80"></textarea>
             <iframe name="richTextField" id="richTextField" style="border: #000 1px solid; " src="" width="100%" height="auto"></iframe>

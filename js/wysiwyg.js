@@ -55,5 +55,7 @@ function iNormalText(){
 }
 
 function submit_form(){
-
+    var theForm = document.getElementById('myForm');
+    theForm.elements['mytextarea'].value = window.frames['richTextField'].document.body.innerHTML;
+    theForm.submit();
 }
