@@ -10,7 +10,7 @@ function iUnderline(){
     richTextField.document.execCommand('underline', false, null);
 }
 
-function iitalic(){
+function iItalic(){
     richTextField.document.execCommand('italic', false, null);
 }
 
