@@ -14,11 +14,6 @@ function iitalic(){
     richTextField.document.execCommand('italic', false, null);
 }
 
-function iFontSize(){
-    // TODO get selected text and change size.
-    
-}
-
 function iHorizontalRule(){
     richTextField.document.execCommand('inserthorizontalrule', false, null);
 }
@@ -29,6 +24,34 @@ function iUnorderedList(){
 
 function iOrderedList(){
     richTextField.document.execCommand('InsertOrderedList', false, "newOL");
+}
+
+function iJustifyLeft(){
+    richTextField.document.execCommand('justifyleft', false, null);
+}
+
+function iJustifyCenter(){
+    richTextField.document.execCommand('justifycenter', false, null);
+}
+
+function iJustifyRight(){
+    richTextField.document.execCommand('justifyright', false, null);
+}
+
+function iHeading1(){
+    richTextField.document.execCommand('fontsize', false, 6);
+}
+
+function iHeading2(){
+    richTextField.document.execCommand('fontsize', false, 5);
+}
+
+function iHeading3(){
+    richTextField.document.execCommand('fontsize', false, 4);
+}
+
+function iNormalText(){
+    richTextField.document.execCommand('fontsize', false, 3);
 }
 
 function submit_form(){
