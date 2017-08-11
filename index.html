@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple wysiwig</title>
+    <script type="text/javascript" src="js/wysiwyg.js"></script>
+</head>
+<body onLoad="iFrameOn();">
+    <div>
+        <form class="" action="post.php" method="post">
+            <div id="wysiwyg_cp" style="padding:8px;">
+                <input type="button" onClick="iBold()" value="B">
+                <input type="button" onClick="iUnderline()" value="U">
+                <input type="button" onClick="iItalic()" value="I">
+                <input type="number" id="fontSize" onClick="iFontSize()" value="11" min="0">
+                <input type="button" onClick="iHorizontalRule()" value="HR">
+                <input type="button" onClick="iUnorderedList()" value="UL">
+                <input type="button" onClick="iOrderedList()" value="OL">
+            </div>
+            <textarea style="display: none;" name="mytextarea" id="mytextarea" rows="8" cols="80"></textarea>
+            <iframe name="richTextField" id="richTextField" style="border: #000 1px solid; " src="" width="100%" height="auto"></iframe>
+            <br>
+            <input type="button" name="myBtn" value="Submit" onClick="javascript:submit_form();">
+        </form>
+    </div>
+</body>
+</html>
